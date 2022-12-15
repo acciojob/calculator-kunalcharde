@@ -96,8 +96,14 @@ var type_to = text=>{
 }
 
 var calculate=()=>{
-    var res = display.innerText
-    display.innerText= eval(res);
+    if(display.innerText==""){
+        alert("Enter Something")
+    }
+    else{
+        var res = display.innerText
+        display.innerText= eval(res);
+    }
+
 }
 
 var erase_screen=()=>{
